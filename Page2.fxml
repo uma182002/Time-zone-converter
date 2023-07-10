@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newfinal.Page2Controller">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #2266ab;">
+         <children>
+            <ImageView fx:id="shieldImageView" fitHeight="56.0" fitWidth="67.0" layoutX="54.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/ImageFolder/shield.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="133.0" layoutY="29.0" prefHeight="31.0" prefWidth="288.0" text="CREATE NEW ACCOUNT" textFill="#fcfcfc">
+               <font>
+                  <Font name="Calibri" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="77.0" layoutY="121.0" text="Firstname">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstnameTextField" layoutX="77.0" layoutY="148.0" prefHeight="26.0" prefWidth="442.0" promptText="FIRSTNAME" />
+      <Label layoutX="78.0" layoutY="196.0" text="Lastname">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastnameTextField" layoutX="78.0" layoutY="223.0" prefHeight="26.0" prefWidth="442.0" promptText="LASTNAME" />
+      <Label layoutX="78.0" layoutY="271.0" text="Username">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="78.0" layoutY="298.0" prefHeight="26.0" prefWidth="442.0" promptText="USERNAME" />
+      <Label layoutX="79.0" layoutY="341.0" text="Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="77.0" layoutY="370.0" prefHeight="26.0" prefWidth="442.0" promptText="PASSWORD" />
+      <Label layoutX="81.0" layoutY="413.0" text="Confirm Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confirmPasswordField" layoutX="79.0" layoutY="442.0" prefHeight="26.0" prefWidth="442.0" promptText="CONFIRM PASSWORD" />
+      <Button fx:id="registerButton" layoutX="77.0" layoutY="505.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="31.0" prefWidth="194.0" style="-fx-background-color: #2266ab;" text="REGISTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="317.0" layoutY="505.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="31.0" prefWidth="194.0" style="-fx-background-color: #2266ab;" text="CLOSE" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="registrationMessage" alignment="CENTER" layoutX="28.0" layoutY="94.0" prefHeight="18.0" prefWidth="537.0" textFill="#18b73d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmPasswordMessage" layoutX="194.0" layoutY="413.0" prefHeight="19.0" prefWidth="358.0" textFill="#cc0e0e">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

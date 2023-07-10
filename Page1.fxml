@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newfinal.Page1Controller">
+   <left>
+      <AnchorPane prefHeight="482.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="482.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/ImageFolder/imageblue.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="114.0" text="THE GLOBE">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="443.0" text="Contact: +91-1234567891">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="460.0" text="E-mail: abc@gmail.com">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="0.0" prefWidth="492.0" style="-fx-background-color: #ECE1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="65.0" layoutY="201.0" prefHeight="26.0" prefWidth="86.0" text="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="129.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="lockImageView" fitHeight="92.0" fitWidth="94.0" layoutX="199.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/ImageFolder/lock.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="usernameTextField" layoutX="155.0" layoutY="199.0" prefHeight="30.0" prefWidth="250.0" promptText="USERNAME" />
+            <Label layoutX="65.0" layoutY="252.0" prefHeight="26.0" prefWidth="86.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordTextField" layoutX="155.0" layoutY="253.0" prefHeight="32.0" prefWidth="250.0" promptText="PASSWORD" />
+            <Button fx:id="loginButton" layoutX="58.0" layoutY="352.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="38.0" prefWidth="377.0" style="-fx-background-color: #1a85c7;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessage" alignment="CENTER" layoutX="60.0" layoutY="291.0" prefHeight="26.0" prefWidth="393.0" textFill="#df0909">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButton" layoutX="57.0" layoutY="413.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="38.0" prefWidth="377.0" style="-fx-background-color: #1a85c7;" text="CANCEL" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="createNewAccount" layoutX="316.0" layoutY="318.0" mnemonicParsing="false" onAction="#createNewAccountOnAction" style="-fx-background-color: #ece1;" text="Create new account?" />
+            <Button layoutX="66.0" layoutY="318.0" mnemonicParsing="false" style="-fx-background-color: #ece1;" />
+            <Button fx:id="worldClock" layoutX="57.0" layoutY="14.0" mnemonicParsing="false" onAction="#worldClockOnAction" prefHeight="38.0" prefWidth="377.0" style="-fx-background-color: #1a85c7;" text="WORLD CLOCK" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
