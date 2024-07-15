@@ -48,16 +48,16 @@ public class Page2Controller implements Initializable {
         shieldImageView.setImage(shieldImage);
     }
 
-    public void registerButtonOnAction(ActionEvent event){
-        if(passwordField.getText().equals(confirmPasswordField.getText())){
-            registerUser();
-            confirmPasswordMessage.setText("");
+    // public void registerButtonOnAction(ActionEvent event){
+    //     if(passwordField.getText().equals(confirmPasswordField.getText())){
+    //         registerUser();
+    //         confirmPasswordMessage.setText("");
 
-        } else {
-            confirmPasswordMessage.setText("Password does not match");
-        }
+    //     } else {
+    //         confirmPasswordMessage.setText("Password does not match");
+    //     }
 
-    }
+    // }
 
     public void closeButtonOnAction(ActionEvent event){
         Stage stage = (Stage) closeButton.getScene().getWindow();
